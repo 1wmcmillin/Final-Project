@@ -1,7 +1,16 @@
-.header{
+header{
     background-color: darkgrey;
-    width: 1350px;
-    height: 75px;
+    width: 1400px;
+    height: 250px;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
+}
+.premade{
+    width: 300px;
+    height: 200px;
+    border: 10px solid black; 
+    float: left;
+    
+
+
 }
