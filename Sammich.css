@@ -5,12 +5,13 @@ header{
     text-align: center;
     font-size: 36px;
 }
+section{
+    display: flex;
+}
 .premade{
-    width: 300px;
+    flex: 1;
     height: 200px;
     border: 10px solid black; 
     float: left;
-    
-
 
 }
