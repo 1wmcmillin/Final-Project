@@ -1,7 +1,7 @@
 header{
     background-color: darkgrey;
-    width: 1400px;
-    height: 250px;
+    width: 1350px;
+    height: 150px;
     text-align: center;
     font-size: 36px;
 }
@@ -14,4 +14,13 @@ section{
     border: 10px solid black; 
     float: left;
 
+}
+
+.image{
+    width: 430px;
+    height: 150px;
+}
+.text{
+    text-align: center;
+    text-size-adjust: 26px;
 }
