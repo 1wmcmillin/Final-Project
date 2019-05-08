@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <h1>Sammiches & Co.</h1>
+        <h1 class="no-top text-center" >Sammiches & Co.</h1>
     </header>
-     <section>
+     <section class="flex-menu">
         <div class = "premade">
             <a href="">  <img class = "image"src="https://shewearsmanyhats.com/wp-content/uploads/2014/01/monte-cristo-sandwich-6new-320x320.jpg"></a>
             <p class = "text" >Turkey, Ham, & Cheese</p>
@@ -29,58 +29,49 @@
     </section>
 
 <section id = "custom">
-    <div class = "">
-        <h2 class = "customtext">Custom Sammich</h2>
-    </div>
+    <h2 class = "customtext">Custom Sammich</h2>
     <form method="GET">
         <select name="bread">
+          <option value="nothing">Bread</option>
           <option value="italian">Italian</option>
           <option value="white">White Bread</option>
           <option value="whole">Whole Grain</option>
         </select>
         <br><br>
-      </form>
-      <form method="GET">
+
         <select name="cheese">
+          <option value="nothing">Cheese</option>
           <option value="cheddar">Cheddar</option>
           <option value="colby">Colby Jack</option>
           <option value="swiss">Swiss</option>
         </select>
         <br><br>
-      </form><form method="GET">
+
         <select name="meat">
+            <option value="nothing">Meat</option>
           <option value="turkey">Turkey</option>
           <option value="salami">Salami</option>
           <option value="ham">Ham</option>
         </select>
         <br><br>
-      </form>
-      <form method="GET">
+     
+      
         <select name="other">
-          <option value="nothing">Nothing</option>
+          <option value="nothing">Vegetables</option>
           <option value="onions">Onions</option>
           <option value="lettuce">Lettuce</option>
           <option value="tomato">Tomato</option>
         </select>
         <br><br>
-      </form>
-      <form method="GET">
+
         <select name="other">
-          <option value="nothing">Nothing</option>
+          <option value="nothing">Condiments</option>
           <option value="mustard">Mustard</option>
           <option value="ketchup">Ketchup</option>
           <option value="mayo">Mayo</option>
         </select>
         <br><br>
-      </form>
-      <form method="GET">
-        <select name="other">
-          <option value="nothing">Nothing</option>
-          <option value="pickles">Pickles</option>
-          <option value="vinegar">Vinegar</option>
-        </select>
-        <br><br>
-      </form>
+        </form>
 </section>
     
 </body>
