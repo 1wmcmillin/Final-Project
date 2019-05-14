@@ -9,93 +9,97 @@
 </head>
 <body onload="myFunction()" style="margin:0;">
 
-        <div id="loader"></div>
-        
-        <div style="display:none;" id="myDiv" class="animate-bottom">
-                <header>
-                        <h1 class="no-top text-center" >Sammiches & Co.</h1>
-                    </header>
-                     <section class="flex-menu">
-                        <div class = "premade">
-                            <a href="">  <img class = "image image-blur"src="https://shewearsmanyhats.com/wp-content/uploads/2014/01/monte-cristo-sandwich-6new-320x320.jpg"></a>
-                            <p class = "text" >Turkey, Ham, & Cheese</p>
-                        </div>
-                
-                        <div class = "premade">
-                            <a href="">  <img class = "image image-blur" src="https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/799c5c42-1c77-476b-9cab-564d4cc5f02d.jpg"></a>
-                            <p class = "text">BLT</p>
-                        </div>
-                    
-                        <div class = "premade">
-                            <a href=""><img class = "image image-blur" src="https://prods3.imgix.net/images/articles/2017_04/Feature-restaurant-butcher-bakery-shops2.jpg?auto=format%2Ccompress&ixjsv=2.2.3&w=670"></a>
-                            <p class = "text">Italian</p>
-                        </div>
-                    </section>
-                
-                <section id = "custom">
-                    <h2 class = "customtext">Custom Sammich</h2>
-                    <div class="half">
-                        <form method="GET">
-                            <select class="menu-selt" name="bread">
-                              <option value="nothing">Bread</option>
-                              <option value="italian">Italian</option>
-                              <option value="white">White Bread</option>
-                              <option value="whole">Whole Grain</option>
-                            </select>
-                            <br><br>
-                    
-                            <select class="menu-selt" name="cheese">
-                              <option value="nothing">Cheese</option>
-                              <option value="cheddar">Cheddar</option>
-                              <option value="colby">Colby Jack</option>
-                              <option value="swiss">Swiss</option>
-                            </select>
-                            <br><br>
-                    
-                            <select class="menu-selt" name="meat">
-                                <option value="nothing">Meat</option>
-                              <option value="turkey">Turkey</option>
-                              <option value="salami">Salami</option>
-                              <option value="ham">Ham</option>
-                            </select>
-                            <br><br>
-                         
-                          
-                            <select class="menu-selt" name="other1">
-                              <option value="nothing">Vegetables</option>
-                              <option value="onions">Onions</option>
-                              <option value="lettuce">Lettuce</option>
-                              <option value="tomato">Tomato</option>
-                            </select>
-                            <br><br>
-                    
-                            <select class="menu-selt" name="other2">
-                              <option value="nothing">Condiments</option>
-                              <option value="mustard">Mustard</option>
-                              <option value="ketchup">Ketchup</option>
-                              <option value="mayo">Mayo</option>
-                            </select>
-                            <br><br>
-                            </form>
-                    </div>
-                    <div class="half">
-                        <button class="button"><span>Purchase </span></button>
-                    </div>
-                </section>
-        </div>
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <header>
+      <h1 class="no-top text-center" >Sammiches & Co.</h1>
+    </header>
+
+    <section class="flex-menu">
+      <div class = "premade">
+        <a href="delivery.html">  <img class = "image image-blur"src="https://shewearsmanyhats.com/wp-content/uploads/2014/01/monte-cristo-sandwich-6new-320x320.jpg"></a>
+        <p class = "text" >Turkey, Ham, & Cheese</p>
+      </div>
     
-    <script>
-        var myVar;
+      <div class = "premade">
+        <a href="delivery.html">  <img class = "image image-blur" src="https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/799c5c42-1c77-476b-9cab-564d4cc5f02d.jpg"></a>
+        <p class = "text">BLT</p>
+      </div>
+  
+      <div class = "premade">
+        <a href="delivery.html"><img class = "image image-blur" src="https://prods3.imgix.net/images/articles/2017_04/Feature-restaurant-butcher-bakery-shops2.jpg?auto=format%2Ccompress&ixjsv=2.2.3&w=670"></a>
+        <p class = "text">Italian</p>
+      </div>
+    </section>
+    
+    <section id = "custom">
+      <h2 class = "customtext">Custom Sammich</h2>
+      <div class="half">
+        <form method="GET">
+          <select class="menu-selt" name="bread">
+            <option value="nothing">Bread</option>
+            <option value="italian">Italian</option>
+            <option value="white">White Bread</option>
+            <option value="whole">Whole Grain</option>
+          </select>
+          <br><br>
+  
+          <select class="menu-selt" name="cheese">
+            <option value="nothing">Cheese</option>
+            <option value="cheddar">Cheddar</option>
+            <option value="colby">Colby Jack</option>
+            <option value="swiss">Swiss</option>
+          </select>
+          <br><br>
+  
+          <select class="menu-selt" name="meat">
+            <option value="nothing">Meat</option>
+            <option value="turkey">Turkey</option>
+            <option value="salami">Salami</option>
+            <option value="ham">Ham</option>
+          </select>
+          <br><br>
         
-        function myFunction() {
-          myVar = setTimeout(showPage, 3000);
-        }
         
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
+          <select class="menu-selt" name="other1">
+            <option value="nothing">Vegetables</option>
+            <option value="onions">Onions</option>
+            <option value="lettuce">Lettuce</option>
+            <option value="tomato">Tomato</option>
+          </select>
+          <br><br>
+  
+          <select class="menu-selt" name="other2">
+            <option value="nothing">Condiments</option>
+            <option value="mustard">Mustard</option>
+            <option value="ketchup">Ketchup</option>
+            <option value="mayo">Mayo</option>
+          </select>
+          <br><br>
+        </form>
+        <div>
+
+        </div>
+      </div>
+      <div class="half">
+        <a href="delivery.html"> <button class="button"><span>Purchase </span></button> </a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
 
 </body>
 </html>
