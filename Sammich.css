@@ -18,7 +18,9 @@ header{
     float: left;
 
 }
-
+#img-center{
+  margin-left: 28%;
+}
 .image{
     width: 430px;
     height: 150px;
@@ -46,7 +48,7 @@ header{
 }
 
 .half{
-    width: 40%;
+    width: 100%;
     float: left;
     padding: 4%;
 }
@@ -58,6 +60,7 @@ section > div > form{
 .menu-selt{
     flex:1;
     margin-right: 5px;
+    height: fit-content;
 }
 .no-top{
     margin-top: 0;

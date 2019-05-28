@@ -36,55 +36,57 @@
     <section id = "custom">
       <h2 class = "customtext">Custom Sammich</h2>
       <div class="half">
-        <form method="GET">
-          <select class="menu-selt" name="bread">
-            <option value="nothing">Bread</option>
-            <option value="italian">Italian</option>
-            <option value="white">White Bread</option>
-            <option value="whole">Whole Grain</option>
-          </select>
-          <br><br>
-  
-          <select class="menu-selt" name="cheese">
-            <option value="nothing">Cheese</option>
-            <option value="cheddar">Cheddar</option>
-            <option value="colby">Colby Jack</option>
-            <option value="swiss">Swiss</option>
-          </select>
-          <br><br>
-  
-          <select class="menu-selt" name="meat">
-            <option value="nothing">Meat</option>
-            <option value="turkey">Turkey</option>
-            <option value="salami">Salami</option>
-            <option value="ham">Ham</option>
-          </select>
-          <br><br>
-        
-        
-          <select class="menu-selt" name="other1">
-            <option value="nothing">Vegetables</option>
-            <option value="onions">Onions</option>
-            <option value="lettuce">Lettuce</option>
-            <option value="tomato">Tomato</option>
-          </select>
-          <br><br>
-  
-          <select class="menu-selt" name="other2">
-            <option value="nothing">Condiments</option>
-            <option value="mustard">Mustard</option>
-            <option value="ketchup">Ketchup</option>
-            <option value="mayo">Mayo</option>
-          </select>
-          <br><br>
-        </form>
-        <div>
 
-        </div>
+          <form method="GET" action="delivery.html" oninput="calculate()">
+          Options:              
+          <select id="bread" class="menu-selt" name="bread">
+            <option value="0">Bread</option>
+            <option value="1">Italian</option>
+            <option value="1">White Bread</option>
+            <option value="2">Whole Grain</option>
+          </select>
+          <br><br>
+  
+          <select id="cheese" class="menu-selt" name="cheese">
+            <option value="0">Cheese</option>
+            <option value="1">Cheddar</option>
+            <option value="2">Colby Jack</option>
+            <option value="1.50">Swiss</option>
+          </select>
+          <br><br>
+  
+          <select id="meat" class="menu-selt" name="meat">
+            <option value="0">Meat</option>
+            <option value="2">Turkey</option>
+            <option value="1.50">Salami</option>
+            <option value="1">Ham</option>
+          </select>
+          <br><br>
+        
+        
+          <select id="other1" class="menu-selt" name="other1">
+            <option value="0">Vegetables</option>
+            <option value="0.75">Onions</option>
+            <option value="0.25">Lettuce</option>
+            <option value="0.50">Tomato</option>
+          </select>
+          <br><br>
+  
+          <select id="other2" class="menu-selt" name="other2">
+            <option value="0">Condiments</option>
+            <option value="0.50">Mustard</option>
+            <option value="0.50">Ketchup</option>
+            <option value="0.50">Mayo</option>
+          </select>
+          
+          Total:$ <output id="result" name="out" for="option "></output>
+          <div class="half">
+              <a href="delivery.html"> <button class="button"><span>Purchase </span></button> </a>
+          </div>
+
+        </form>
       </div>
-      <div class="half">
-        <a href="delivery.html"> <button class="button"><span>Purchase </span></button> </a>
-      </div>
+      
     </section>
   </div>
 
@@ -100,6 +102,18 @@
     document.getElementById("myDiv").style.display = "block";
   }
   </script>
+  <script>
+    function calculate(){
+      let doc = document;
+      let bread = doc.getElementById("bread")
+      let cheese = doc.getElementById("cheese")
+      let meat = doc.getElementById("meat")
+      let other1 = doc.getElementById("other1")
+      let other2 = doc.getElementById("other2")
+      let result = doc.getElementById("result")
 
+      result.value = Number(parseFloat(bread.value)) + Number(parseFloat(cheese.value)) + Number(parseFloat(meat.value)) + Number(parseFloat(other1.value)) + Number(parseFloat(other2.value));
+    }
+  </script>
 </body>
 </html>
